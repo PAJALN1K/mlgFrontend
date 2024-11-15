@@ -1,0 +1,53 @@
+// @import "../../../../../assets/scss/abstracts/variables/colors";
+// @import "../../../../../assets/scss/abstracts/variables/fontFamilies";
+// @import "../../../../../assets/scss/abstracts/mixins/textMixins";
+
+// FIXME
+// .MLGForm {
+//     color: $colorBlack;
+
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     gap: 12px;
+
+//     &-Header {
+//         @include textMixin_shortened($colorBlack, $ffInter, 400, 22px);
+//         margin-bottom: 12px;
+//     }
+
+//     &-Instructions {
+//         @include textMixin_default($colorLightGrey, $ffArimo, 400, 12px, normal, 1.5);
+//         width: 360px;
+//     }
+
+//     &-Button {
+//     }
+
+//     &-ErrorMsg {
+//     }
+
+//     &-Field {
+//         display: flex;
+//         flex-direction: column;
+//     }
+
+//     &-NameLabel {
+//         @include textMixin_default($colorBlack, $ffArimo, 400, 18px, normal, 1.5);
+//         align-self: center;
+//         margin-bottom: 5px;
+//     }
+
+//     &-Input {
+//         padding: 7px 10px;
+//         border: 2px solid $colorCyan;
+//         border-radius: 3px;
+//         width: 360px;
+//         margin-bottom: 10px;
+
+//         font-size: 16px;
+//         color: $colorBlack;
+//         font-family: $ffArimo;
+//         line-height: 16px * 1.5;
+//     }
+// }

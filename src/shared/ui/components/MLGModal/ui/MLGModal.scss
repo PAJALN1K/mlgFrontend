@@ -1,0 +1,75 @@
+@use "../../../../assets/scss/abstracts/mixins/textMixins";
+@use "../../../../assets/scss/abstracts/variables/colors";
+@use "../../../../assets/scss/abstracts/variables/fontFamilies";
+
+.MLGModal {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgb(36 36 36 / 40%);
+
+    &-Content {
+        position: relative;
+        z-index: 2;
+
+        box-sizing: content-box;
+        max-width: 630px;
+        padding: 54px 24px 30px;
+
+        color: colors.$colorWhite;
+
+        background-color: colors.$colorGrey;
+        border: none;
+        border-radius: 3px;
+    }
+
+    &-CloseIcon {
+        cursor: pointer;
+
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        font-size: 21px;
+        color: colors.$colorWhite;
+    }
+
+    .MLGModalSubmit &-Content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-Heading {
+        @include textMixins.textMixin_default(colors.$colorWhite, fontFamilies.$ffPtSans, 700, 24px, normal, 1.4);
+        box-sizing: border-box;
+        margin-bottom: 24px;
+        padding-right: 45px;
+    }
+
+    &-Text {
+        @include textMixins.textMixin_default(colors.$colorWhite, fontFamilies.$ffNotoSans, 400, 15px, normal, 1.5);
+        display: block;
+        margin-bottom: 24px;
+    }
+
+    &-Btns {
+        display: flex;
+        gap: 9px;
+        align-self: flex-end;
+    }
+
+    &-Btn {
+        font-family: fontFamilies.$ffNotoSans;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}

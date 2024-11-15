@@ -1,0 +1,35 @@
+@use "../abstracts/variables/colors";
+
+// * {
+//     scrollbar-width: 15px;;
+//     scrollbar-color: $colorGrey $colorLightGrey;
+// }
+
+*::-webkit-scrollbar {
+    // height: 90px;
+    width: 16px;
+    margin: 3px 0;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: colors.$colorDarkDarkGrey;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: colors.$colorMiddleGrey;
+    border-top: 16px solid colors.$colorDarkDarkGrey;
+    border-right: 4px solid colors.$colorDarkDarkGrey;
+    border-bottom: 16px solid colors.$colorDarkDarkGrey;
+
+    // background-color: $colorLight-grey;
+    border-left: 4px solid colors.$colorDarkDarkGrey;
+}
+
+// .example-div-to-have-scrollbar {
+//     overflow-y: scroll;
+//     scroll-behavior: auto;
+//     scrollbar-width: 10px;
+//     scrollbar-color: #495057 #2a2e34;
+//     scrollbar-arrow-color: #2a2e34;
+// }
+

@@ -1,0 +1,49 @@
+@use "../../../../../shared/assets/scss/abstracts/variables/colors";
+@use "../../../../../shared/assets/scss/abstracts/variables/fontFamilies";
+@use "../../../../../shared/assets/scss/abstracts/mixins/textMixins";
+
+.Jumbotron {
+    padding: 72px 36px;
+
+    color: colors.$colorWhite;
+
+    background-color: colors.$colorWhite;
+    border-radius: 3px;
+    box-shadow: 0 8px 8px rgb(0 0 0 / 10%);
+
+    &-Container {
+        display: flex;
+        gap: 90px;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    &-MLGLogoImg {
+        height: 54px;
+    }
+
+    &-Content {
+        display: flex;
+        flex-direction: column;
+        width: 540px;
+        text-align: center;
+    }
+
+    &-Buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+    }
+
+    &-Button {
+        @include textMixins.textMixin_shortened(null, fontFamilies.$ffInter, 700, 16px);
+    }
+}

@@ -1,0 +1,49 @@
+@use "../../../../assets/scss/abstracts/variables/colors";
+@use "../../../../assets/scss/abstracts/variables/fontFamilies";
+
+.MLGSearch {
+    &-Form {
+        position: relative;
+        align-self: flex-start;
+        width: 230px;
+        height: 45px;
+    }
+
+    &-Input {
+        position: absolute;
+
+        box-sizing: border-box;
+        width: 230px;
+        height: 45px;
+        padding: 10px 15px 10px 35px;
+
+        font-family: fontFamilies.$ffArimo;
+        font-size: 14px;
+        color: colors.$colorBlack;
+        vertical-align: middle;
+
+        background-color: colors.$colorWhite;
+        border: 2px solid colors.$colorLighterGrey;
+        border-radius: 3px;
+    }
+
+    &-Input::placeholder {
+        font-family: fontFamilies.$ffArimo;
+        color: colors.$colorLighterGrey;
+    }
+
+    &-Input:focus {
+        border: 2px solid colors.$colorCyan;
+    }
+
+    &-Icon {
+        position: absolute;
+        padding: 15px 10px;
+        font-size: 14px;
+        color: colors.$colorLighterGrey;
+    }
+
+    &-Input:focus + &-Icon {
+        color: colors.$colorCyan;
+    }
+}

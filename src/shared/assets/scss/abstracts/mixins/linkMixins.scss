@@ -1,0 +1,62 @@
+@mixin linkMixin_opacity($ulColor, $ulHeight, $ulRemoteness, $transTime) {
+    position: relative;
+
+    &::after {
+        content: "";
+
+        position: absolute;
+        bottom: -$ulRemoteness;
+
+        display: block;
+
+        width: 100%;
+        height: $ulHeight;
+
+        opacity: 0;
+        background-color: $ulColor;
+
+        transition: opacity $transTime;
+    }
+
+    &:hover::after {
+        opacity: 1;
+    }
+}
+
+@mixin linkMixin_transparentGrow(
+    $ulColor,
+    $ulHeight,
+    $ulRemoteness,
+    $ulRunUp,
+    $tfCoef,
+    $transTime
+) {
+    position: relative;
+
+    &::after {
+        content: "";
+
+        position: absolute;
+        bottom: -($ulRemoteness + $ulRunUp);
+        transform: scaleX($tfCoef);
+
+        display: block;
+
+        width: 100%;
+        height: $ulHeight;
+
+        opacity: 0;
+        background-color: $ulColor;
+
+        transition:
+            bottom $transTime,
+            opacity $transTime,
+            transform $transTime;
+    }
+
+    &:hover::after {
+        bottom: -($ulRemoteness);
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}

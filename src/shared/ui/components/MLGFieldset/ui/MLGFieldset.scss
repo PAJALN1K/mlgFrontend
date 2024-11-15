@@ -1,0 +1,78 @@
+@use "../../../../assets/scss/abstracts/variables/colors";
+@use "../../../../assets/scss/abstracts/variables/fontFamilies";
+
+.MLGFieldset {
+    font-family: fontFamilies.$ffArial;
+
+    &-Btns {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &-Legend {
+        margin-bottom: 5px;
+
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 18px * 1.5;
+        color: colors.$colorCyanDarker;
+    }
+
+    &-Label {
+        user-select: none;
+
+        display: inline-flex;
+        align-items: center;
+
+        font-size: 14px;
+        line-height: 14px * 1.25;
+    }
+
+    &-Input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    &-Label::before {
+        content: "";
+
+        display: inline-block;
+        flex-grow: 0;
+        flex-shrink: 0;
+
+        width: 1em;
+        height: 1em;
+        margin-right: 0.5em;
+
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50% 50%;
+        border: 1px solid colors.$colorDarkGrey;
+        border-radius: 50%;
+    }
+
+    &-Input:checked + &-Label::before {
+        background-color: colors.$colorCyanDarker;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+        border-color: colors.$colorCyanDarker;
+    }
+
+    &-Input:disabled + &-Label::before {
+        background-color: colors.$colorGrey;
+    }
+
+    &-Input:not(:disabled, :checked) + &-Label:hover::before {
+        border-color: colors.$colorCyan;
+    }
+
+    &-Input:not(:disabled):active + &-Label::before {
+        background-color: colors.$colorCyan;
+        border-color: colors.$colorCyan;
+    }
+
+    &-Input:focus:not(:checked) + &-Label::before {
+        border-color: colors.$colorCyan;
+    }
+}

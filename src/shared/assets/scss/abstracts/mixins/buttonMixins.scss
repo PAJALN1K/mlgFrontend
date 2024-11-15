@@ -1,0 +1,29 @@
+@mixin buttonMixin_default(
+    $borderColor,
+    $bgColor,
+    $txtColor,
+    $borderColor_hov,
+    $bgColor_hov,
+    $txtColor_hov,
+    $transTime
+) {
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    color: $txtColor;
+
+    background-color: $bgColor;
+    border: 2px solid $borderColor;
+
+    transition:
+        color $transTime ease,
+        background-color $transTime ease,
+        border-color $transTime ease;
+
+    &:hover {
+        color: $txtColor_hov;
+        background-color: $bgColor_hov;
+        border-color: $borderColor_hov;
+    }
+}

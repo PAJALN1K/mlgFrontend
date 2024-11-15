@@ -1,0 +1,12 @@
+@mixin textMixin_default($color, $ff, $fw, $fs, $ls, $lhCoef) {
+    font-family: $ff;
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $fs * $lhCoef;
+    color: $color;
+    letter-spacing: $ls;
+}
+
+@mixin textMixin_shortened($color, $ff, $fw, $fs) {
+    @include textMixin_default($color, $ff, $fw, $fs, normal, 1)
+}

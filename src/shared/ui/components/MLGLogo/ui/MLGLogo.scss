@@ -1,0 +1,24 @@
+@use "../../../../assets/scss/abstracts/variables/colors";
+
+.MLGLogo {
+    display: block;
+
+    g {
+        fill: colors.$colorCyan;
+    }
+
+    &_default {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        align-items: center;
+    }
+
+    &_anchor {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+    }
+}

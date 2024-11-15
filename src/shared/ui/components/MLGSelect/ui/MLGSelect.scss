@@ -1,0 +1,32 @@
+@use "../../../../assets/scss/abstracts/mixins/textMixins";
+@use "../../../../assets/scss/abstracts/variables/colors";
+@use "../../../../assets/scss/abstracts/variables/fontFamilies";
+
+.MLGSelect {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    font-family: fontFamilies.$ffArial;
+
+    &-Label {
+        @include textMixins.textMixin_shortened(colors.$colorWhite, fontFamilies.$ffNotoSans, 500, 16px);
+    }
+
+    &-Optns {
+        display: block;
+
+        width: 250px;
+        height: 40.7px;
+        padding: 10px;
+
+        color: colors.$colorWhite;
+
+        background-color: colors.$colorDarkGrey;
+        border: 1px solid colors.$colorLightGrey;
+        border-radius: 3px;
+    }
+
+    &-Optn {
+        @include textMixins.textMixin_shortened(colors.$colorWhite, fontFamilies.$ffNotoSans, 500, 14px);
+    }
+}

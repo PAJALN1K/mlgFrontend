@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    // Базовые опции:
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // При транспиляции с Typescript
+    "module": "ES6",
+    "moduleResolution": "Node",
+    "outDir": "public/js",
+
+    // DOM
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "incremental": true,
+    "jsx": "react-jsx",
+
+    // Строгость
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "strictBindCallApply": true,
+
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+
+    // Линтинг (по сути заменяются линтером вроде ESLint)
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": false,
+
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false
+  },
+  "include": ["./src"],
+  "exclude": ["node_modules", "public", "build"]
+}

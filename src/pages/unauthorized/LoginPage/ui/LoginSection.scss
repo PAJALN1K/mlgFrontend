@@ -1,0 +1,41 @@
+@use "../../../../shared/assets/scss/abstracts/variables/colors";
+@use "../../../../shared/assets/scss/abstracts/variables/fontFamilies";
+@use "../../../../shared/assets/scss/abstracts/mixins/textMixins";
+
+.LoginSection {
+    margin-bottom: 8px;
+    padding: 72px 30px 36px;
+
+    color: colors.$colorWhite;
+
+    background-color: colors.$colorWhite;
+    border-radius: 3px;
+    box-shadow: 0 8px 8px rgb(0 0 0 / 10%);
+
+    &-Wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-MLGLogo {
+        width: 100px;
+        margin-bottom: 50px;
+    }
+
+    &-LinkPretext {
+        margin-top: 26px;
+        margin-bottom: 18px;
+
+        font-family: fontFamilies.$ffNotoSans;
+        font-size: 15px;
+        color: colors.$colorBlack;
+    }
+
+    &-Link {
+        font-family: fontFamilies.$ffNotoSans;
+        font-size: 15px;
+        color: colors.$colorCyan;
+    }
+}

@@ -1,0 +1,63 @@
+// abstracts
+@use "../../../shared/assets/scss/abstracts/variables/colors";
+@use "../../../shared/assets/scss/abstracts/variables/fontFamilies";
+@use "../../../shared/assets/scss/abstracts/mixins/buttonMixins";
+@use "../../../shared/assets/scss/abstracts/mixins/linkMixins";
+@use "../../../shared/assets/scss/abstracts/mixins/textMixins";
+
+// core
+@use "../../../shared/assets/scss/core/Hidden";
+@use "../../../shared/assets/scss/core/nullStyle";
+@use "../../../shared/assets/scss/core/fonts";
+@use "../../../shared/assets/scss/core/scrollbar";
+@use "../../../shared/assets/scss/core/NoSelect";
+@use "../../../shared/assets/scss/core/selection";
+
+// layout
+@use "layout/Root";
+@use "layout/MLGPage";
+
+// classic layout
+@use "../../../widgets/classicLayout/Main/ui/styles/Main";
+@use "../../../widgets/classicLayout/Main/ui/styles/MainHeader";
+
+// panel layout
+// FIXME
+// @import "../../../widgets/panelLayout/LeftPanel/ui/LeftPanel";
+// @import "../../../widgets/panelLayout/LeftPanel/ui/LeftConstColumn";
+// @import "../../../widgets/panelLayout/LeftPanel/ui/PageNav/PageNav";
+// @import "../../../widgets/panelLayout/MainPanel/ui/MainPanel";
+// @import "../../../widgets/panelLayout/RightPanel/ui/RightPanel";
+
+// components
+@use "../../../shared/ui/components/MLGLogo/ui/MLGLogo";
+@use "../../../shared/ui/components/MLGLoader/ui/MLGLoader";
+@use "../../../shared/ui/components/MLGButton/ui/styles/MLGButton";
+@use "../../../shared/ui/components/MLGLink/ui/styles/MLGLink";
+@use "../../../shared/ui/components/MLGLink/ui/styles/MLGLink_opacity";
+@use "../../../shared/ui/components/MLGLink/ui/styles/MLGLink_transparentGrow";
+@use "../../../shared/ui/components/MLGForm/ui/styles/MLGForm";
+@use "../../../shared/ui/components/MLGForm/ui/styles/MLGForm_classy";
+@use "../../../shared/ui/components/MLGSearch/ui/MLGSearch";
+@use "../../../shared/ui/components/MLGSelect/ui/MLGSelect";
+@use "../../../shared/ui/components/MLGFieldset/ui/MLGFieldset";
+@use "../../../shared/ui/components/MLGModal/ui/MLGModal";
+@use "../../../shared/ui/icons/MLGIconRI/ui/MLGIconRI";
+@use "../../../shared/ui/icons/MLGIconImg/ui/MLGIconImg";
+@use "../../../shared/ui/icons/MLGIconSvg/ui/MLGIconSvg";
+
+// pages
+@use "../../../pages/common/HomePage/ui/Jumbotron/Jumbotron";
+@use "../../../pages/unauthorized/RegistrationPage/ui/RegistrationSection";
+@use "../../../pages/unauthorized/RegistrationPage/ui/RegistrationConfirmation";
+@use "../../../pages/unauthorized/LoginPage/ui/LoginSection";
+
+// FIXME
+// @import "../../../pages/authorized/ProjectsPage/ui/ProjectsPage";
+// @import "../../../pages/authorized/ProjectCreationPage/ui/ModelCreation";
+
+// sections
+// FIXME
+// @import "../../../entities/Project/Project/ui/ProjectCard/ProjectCard";
+// @import "../../../entities/Project/Project/ui/ProjectRow/ProjectRow";
+// @import "../../../widgets/ProjectRowList/ui/ProjectRowList";

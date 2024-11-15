@@ -1,0 +1,34 @@
+{
+  "recommendations": [
+    // Прогграммирование в целом
+    "christian-kohler.path-intellisense",
+
+    // Для удобной вёрстки и стилизации
+    "FallenMax.mithril-emmet",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "solnurkarim.html-to-css-autocompletion",
+    "Zignd.html-css-class-completion",
+    "pranaygp.vscode-css-peek",
+    "mrmlnc.vscode-scss",
+
+    // JS
+    "dsznajder.es7-react-js-snippets",
+
+    // Линтеры, форматтеры, чекеры
+    "dbaeumer.vscode-eslint",
+    "stylelint.vscode-stylelint",
+    "hex-ci.stylelint-plus",
+    "esbenp.prettier-vscode",
+    "rvest.vs-code-prettier-eslint",
+    "streetsidesoftware.code-spell-checker",
+    "streetsidesoftware.code-spell-checker-russian",
+
+    // Прочее полезное
+    "Gruntfuggly.todo-tree"
+
+    // Внешний вид (опционально)
+    // "zhuangtongfa.material-theme",
+    // "PKief.material-icon-theme"
+  ]
+}

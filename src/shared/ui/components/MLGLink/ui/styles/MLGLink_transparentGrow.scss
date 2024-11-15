@@ -1,0 +1,6 @@
+@use "../../../../../assets/scss/abstracts/variables/colors";
+@use "../../../../../assets/scss/abstracts/mixins/linkMixins";
+
+.MLGLink_transparentGrow_blue {
+    @include linkMixins.linkMixin_transparentGrow(colors.$colorCyan, 1.5px, 3.5px, 1px, 0.8, 0.3s);
+}

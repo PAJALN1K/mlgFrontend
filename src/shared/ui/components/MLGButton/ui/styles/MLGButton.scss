@@ -1,0 +1,35 @@
+@use "../../../../../assets/scss/abstracts/variables/colors";
+@use "../../../../../assets/scss/abstracts/mixins/buttonMixins";
+
+.MLGButton,
+.MLGButtonLink {
+    &_default {
+        padding: 10px 20px;
+        border-radius: 3px;
+
+        @include buttonMixins.buttonMixin_default(
+            colors.$colorCyan,
+            colors.$colorCyan,
+            colors.$colorWhite,
+            colors.$colorCyanDarker,
+            colors.$colorCyanDarker,
+            colors.$colorWhite,
+            0.35s
+        );
+    }
+
+    &_empty {
+        padding: 10px 20px;
+        border-radius: 3px;
+
+        @include buttonMixins.buttonMixin_default(
+            colors.$colorCyan,
+            inherit,
+            colors.$colorCyan,
+            colors.$colorCyan,
+            colors.$colorCyan,
+            colors.$colorWhite,
+            0.35s
+        );
+    }
+}

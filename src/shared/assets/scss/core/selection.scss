@@ -1,0 +1,6 @@
+@use "../abstracts/variables/colors";
+
+::selection {
+    color: colors.$colorWhite;
+    background-color: colors.$colorCyan;
+}
